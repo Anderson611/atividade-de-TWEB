@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .cabecalho,
+body.dark-mode .rodape {
+    background-color: #111;
+}
+
+body.dark-mode .apresentacao__links__ancora,
+body.dark-mode .custom-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.cabecalho {
+    background-color:  #3313e9;
+    padding: 20px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cabecalho__menu__ancora {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.apresentacao__conteudo {
+    max-width: 600px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.apresentacao__conteudo__texto {
+    margin-bottom: 30px;
+}
+
+.apresentacao__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apresentacao__links__ancora,
+.custom-btn {
+    background-color: #3313e9;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+.apresentacao__imagem {
+    max-width: 500px;
+    width: 100%;
+}
+
+.apresentacao__imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-controls {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-controls input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.rodape {
+    background-color:  #3313e9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#topo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  #3313e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.custom-btn{
+    height: 70%;
+}
+
+button.custom-btn{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
